@@ -9,7 +9,7 @@ const Options = ({
   resetFeedback,
 }) => {
   return (
-    <div className="feedback-btn-container">
+    <div>
       {Object.keys(feedback).map(option => (
         <button key={option} onClick={() => updateFeedback(option)}>
           {option.charAt(0).toUpperCase() + option.slice(1)}
